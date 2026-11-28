@@ -18,9 +18,11 @@ public import Concatenation.Seq.Interpretability
 public import Concatenation.TC.Arithmetic
 public import Concatenation.TC.Basic
 public import Concatenation.TC.Empty
+public import Concatenation.TC.ISigma
 public import Concatenation.TC.Interpretability
 public import Concatenation.TC.Sequence
 public import Concatenation.TC.Substring
+public import Concatenation.ToFoundation.Arithmetic.BijectiveBinary
 public import Concatenation.ToFoundation.Arithmetic.Pairing
 public import Concatenation.ToFoundation.Arithmetic.PeanoMinus
 public import Concatenation.ToFoundation.Arithmetic.Q
