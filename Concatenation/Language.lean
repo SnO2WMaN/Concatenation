@@ -182,6 +182,17 @@ notation "ℒ⌢⊑" => concatenationPrefix
 
 instance : (ℒ⌢⊑).Prefix := ⟨Sum.inr PrefixRel.pref⟩
 
+/--
+Language of the theory of concatenation with the empty string and a bounding relation.
+- [KM21, §1.4]
+-/
+abbrev concatenationEmptyPrefix : Language := ℒ⌢ₑ.add prefixRel
+
+@[inherit_doc]
+notation "ℒ⌢ₑ⊑" => concatenationEmptyPrefix
+
+instance : (ℒ⌢ₑ⊑).Prefix := ⟨Sum.inr PrefixRel.pref⟩
+
 section
 
 variable (k : ℕ)

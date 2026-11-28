@@ -114,6 +114,30 @@ instance {n : ℕ} : (ℒ⌢[Fin n]).LORDefinable where
 
 end Language.ConcatenationLetters
 
+namespace Language.PrefixRel
+
+instance : prefixRel.Encodable where
+  func _ := inferInstanceAs (Encodable Empty)
+  rel _ := inferInstance
+
+instance : prefixRel.Primcodable where
+  func := by
+    apply (Primrec.const 0 : Primrec fun _ : ℕ × ℕ ↦ 0).of_eq
+    rintro ⟨k, e⟩
+    simp [Encodable.decode]
+  rel := by
+    have h : Primrec fun p : ℕ × ℕ ↦ if p.1 = 2 ∧ p.2 = 0 then 1 else 0 := by primrec
+    apply h.of_eq
+    rintro ⟨k, e⟩
+    match k, e with
+    |     0,     _ => rfl
+    |     1,     _ => rfl
+    |     2,     0 => rfl
+    |     2, _ + 1 => simp [Encodable.decode]
+    | _ + 3,     _ => simp [Encodable.decode]
+
+end Language.PrefixRel
+
 namespace Language
 
 lemma concatenationEmpty.decode_func_two_mul (k m : ℕ) :

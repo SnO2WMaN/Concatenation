@@ -4,6 +4,33 @@
 # The keys are the citation keys used in docstrings, e.g. `- [Grz05, §3]`;
 # see docs/conventions.md. Entries are sorted by key.
 
+Cio24:
+  type: Article
+  title: Word equations, constraints, and formal languages
+  author: Ciobanu, Laura
+  date: 2024
+  serial-number:
+    arxiv: "2406.02160"
+  parent:
+    type: Repository
+    title: arXiv
+
+DGHMN18:
+  type: Article
+  title: "The Satisfiability of Extended Word Equations: The Boundary Between Decidability and Undecidability"
+  author:
+  - Day, Joel
+  - Ganesh, Vijay
+  - He, Paul
+  - Manea, Florin
+  - Nowotka, Dirk
+  date: 2018
+  serial-number:
+    arxiv: "1802.00523"
+  parent:
+    type: Repository
+    title: arXiv
+
 Dam17:
   type: Article
   title: From Strings to Sets
@@ -128,6 +155,21 @@ Hor12:
     volume: 53
     issue: 2
 
+KM21:
+  type: Article
+  title: First-order concatenation theory with bounded quantifiers
+  author:
+  - Kristiansen, Lars
+  - Murwanashyaka, Juvenal
+  date: 2021
+  page-range: 77-104
+  serial-number:
+    doi: "10.1007/s00153-020-00735-6"
+  parent:
+    type: Periodical
+    title: Archive for Mathematical Logic
+    volume: 60
+
 KM24:
   type: Article
   title: "Notes on Interpretability between Weak First-order Theories: Theories of Sequences"
@@ -137,6 +179,17 @@ KM24:
   date: 2024
   serial-number:
     arxiv: "2402.14286"
+  parent:
+    type: Repository
+    title: arXiv
+
+Mur21:
+  type: Article
+  title: Undecidability in First-Order Theories of Term Algebras Extended with a Substitution Operator
+  author: Murwanashyaka, Juvenal
+  date: 2021
+  serial-number:
+    arxiv: "2111.00573"
   parent:
     type: Repository
     title: arXiv
@@ -153,6 +206,13 @@ Mur22:
     type: Periodical
     title: Archive for Mathematical Logic
     volume: 61
+
+Mur23:
+  type: Thesis
+  title: Papers on Weak First-Order Theories and Decidability Problems
+  author: Murwanashyaka, Juvenal
+  date: 2023
+  organization: University of Oslo
 
 Mur24:
   type: Article
