@@ -19,8 +19,11 @@ public import Concatenation.TC.Arithmetic
 public import Concatenation.TC.Basic
 public import Concatenation.TC.Empty
 public import Concatenation.TC.Interpretability
+public import Concatenation.TC.NotationInduction
 public import Concatenation.TC.Sequence
 public import Concatenation.TC.Substring
+public import Concatenation.TC.TallyArithmetic
+public import Concatenation.TC.TallyMultiplication
 public import Concatenation.ToFoundation.Arithmetic.Pairing
 public import Concatenation.ToFoundation.Arithmetic.PeanoMinus
 public import Concatenation.ToFoundation.Arithmetic.Q
@@ -41,12 +44,14 @@ public import Concatenation.ToFoundation.Interpretability.LocallyFinitelySatisfi
 public import Concatenation.ToFoundation.Interpretability.Undecidability
 public import Concatenation.ToFoundation.Language
 public import Concatenation.ToFoundation.Naming
+public import Concatenation.ToFoundation.PrenexDefinable
 public import Concatenation.ToFoundation.Theory
 public import Concatenation.ToMathlib.AtomicPairing
 public import Concatenation.ToMathlib.Encodable
 public import Concatenation.ToMathlib.FreeSemigroup
 public import Concatenation.ToMathlib.Infinite
 public import Concatenation.ToMathlib.NonnegSpecialLinearGroup
+public import Concatenation.ToMathlib.VecCons
 public import Concatenation.WTC.Arithmetic
 public import Concatenation.WTC.Basic
 public import Concatenation.WTC.Editor
