@@ -4,11 +4,13 @@ public import Foundation.FirstOrder.Arithmetic.R0.Undecidability
 public import Concatenation.ToFoundation.Interpretability.LocallyFinitelySatisfiable
 public import Concatenation.ToMathlib.Infinite
 public import Foundation.FirstOrder.Arithmetic.Q.Basic
+public import Foundation.FirstOrder.Arithmetic.Schemata
 
 /-!
 # Robinson's arithmetic $\mathsf{Q}$
 
-$\mathsf{Q}$ is finitely axiomatizable, has no finite models, and is essentially undecidable.
+$\mathsf{Q}$ is finitely axiomatizable, has no finite models, and is essentially undecidable. The
+interpretation of $\mathsf{I}\Sigma_0$ in $\mathsf{Q}$ is assumed as an axiom.
 -/
 
 @[expose] public section
@@ -62,5 +64,11 @@ $\mathsf{Q}$ is essentially undecidable.
 -/
 instance : Entailment.EssentiallyUndecidable (𝗤 : ArithmeticTheory) fun _ ↦ True :=
   Entailment.EssentiallyUndecidable.of_weakerThan 𝗥₀ 𝗤
+
+/--
+$\mathsf{Q}$ interprets $\mathsf{I}\Sigma_0$.
+- [HP98, Theorem V.5.7]
+-/
+axiom ISigma0.interpretationInQ : 𝗤 ⊳ 𝗜𝚺₀
 
 end FFL.FirstOrder.Arithmetic
